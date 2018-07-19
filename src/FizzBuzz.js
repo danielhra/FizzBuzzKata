@@ -5,7 +5,7 @@ export class FizzBuzz{
 
         for(var i=0; i<100;i++){
 
-            elements[i] = undefined;
+            elements[i] = this.getResult(i+1);
         }
 
         return elements;
@@ -22,7 +22,7 @@ export class FizzBuzz{
         if(num % 5 === 0)
             result.push('Buzz');
 
-        if(!num.length)
+        if(!result.length)
             result.push(num);
 
         return result;
